@@ -76,17 +76,6 @@ TRAIN_END_YEAR = 2022
 VALIDATION_YEARS = [2023, 2024]
 TEST_YEAR = 2025
 
-# Numeric rounding used in Silver
-ROUND_PRECISION = {
-    'temperature': 2,
-    'precipitation': 2,
-    'wind': 2,
-    'anomaly': 3,
-    'production': 3,
-    'growth_rate': 4,
-    'oni': 3
-}
-
 @dataclass
 class ProjectPaths:
     volume_path: str = VOLUME_PATH
