@@ -76,6 +76,40 @@ TRAIN_END_YEAR = 2022
 VALIDATION_YEARS = [2023, 2024]
 TEST_YEAR = 2025
 
+# Model inputs. production_next_quarter is the label, not a feature.
+# growth_rate_yoy and risk_label are excluded (target leakage).
+NUMERIC_FEATURES = [
+    'production_lag_1',
+    'production_lag_2',
+    'production_lag_4',
+    'quarter_num',
+    'temperature_2m_mean',
+    'temperature_2m_max',
+    'temperature_2m_min',
+    'precipitation_sum',
+    'rain_sum',
+    'precipitation_hours',
+    'sunshine_duration',
+    'reference_evapotranspiration_mm',
+    'wind_speed_10m_max',
+    'wind_gusts_10m_max',
+    'rainfall_deviation_pct',
+    'temperature_anomaly_c',
+    'temp_anomaly_rolling',
+    'rain_anomaly_rolling',
+    'oni_index'
+]
+BOOLEAN_FEATURES = [
+    'enso_phase_la_nina',
+    'enso_phase_neutral'
+]
+CATEGORICAL_FEATURES = [
+    'province',
+    'crop',
+    'crop_group'
+]
+LABEL_COL = 'production_next_quarter'
+
 @dataclass
 class ProjectPaths:
     volume_path: str = VOLUME_PATH
