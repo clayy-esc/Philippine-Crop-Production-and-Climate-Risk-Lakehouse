@@ -60,7 +60,8 @@ ML_TABLES = {
     'crop_production_predictions': fq('ml', 'crop_production_predictions')
 }
 
-MODEL_NAME = f'{CATALOG}.ml.crop_production_forecaster'
+MODEL_NAME = 'crop_production_forecaster'
+MODEL_PATH = f'{VOLUME_PATH}/crop_production_forecaster.joblib'
 
 
 # ---------------------------------------------------------------------------
