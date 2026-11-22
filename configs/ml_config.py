@@ -31,6 +31,7 @@ LABEL_COLUMN = "production_next_quarter"
 
 # growth_rate_yoy and risk_label are NOT features: they describe the same quarter
 # as the label and would leak the answer into the model.
+# production_year_ago is also not a feature: it is only used for the predicted YoY in batch inference.
 NUMERIC_FEATURES = [
     "production_lag_1", "production_lag_2", "production_lag_3", "production_lag_4",
     "quarter_num",
