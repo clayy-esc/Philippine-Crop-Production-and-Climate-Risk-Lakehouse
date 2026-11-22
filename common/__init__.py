@@ -1,0 +1,1 @@
+# Only one shared helper lives here: writing Delta tables (see delta_io.py).

@@ -1,3 +1,3 @@
 # Makes `configs` a Python package.
-# Import symbols from the module, e.g.:
-#   from configs.project_config import CATALOG, PATHS
+#   from configs.etl_config import CATALOG, BRONZE_CROP_TABLE
+#   from configs.ml_config import REGISTERED_MODEL_NAME, ALL_FEATURE_COLUMNS
