@@ -1,1 +1,1 @@
-# Only one shared helper lives here: writing Delta tables (see delta_io.py).
+# Only one shared helper lives here: writing Delta tables (delta_io.py).
