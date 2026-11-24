@@ -1,1 +1,2 @@
-# Only one shared helper lives here: writing Delta tables (delta_io.py).
+# Makes 'utilities' a Python package.
+# Define reusable Python modules.
